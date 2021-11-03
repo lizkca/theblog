@@ -2,4 +2,5 @@ site_name: My Blog
 nav:
     - Home: index.md
     - 1: 1.md
+    - 2: 2.md
 theme: readthedocs
