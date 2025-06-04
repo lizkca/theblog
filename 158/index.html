@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>12 - My Blog</title>
+    <title>158 - My Blog</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = 12;
-        var mkdocs_page_input_path = "12.md";
+        var mkdocs_page_name = 158;
+        var mkdocs_page_input_path = "158.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -88,10 +88,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../11/">11</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">12</a>
-    <ul class="current">
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../12/">12</a>
                 </li>
               </ul>
               <ul>
@@ -674,8 +672,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../157/">157</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../158/">158</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">158</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
       </div>
@@ -692,7 +692,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-      <li>12</li>
+      <li>158</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -701,24 +701,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="1222">12月22日</h1>
+                <h1 id="cursor-ai-202564">《我是如何驯服Cursor AI，让它每次都能写出完美代码的》 。（2025年6月4日）</h1>
 <ul>
-<li>
-<p>1.教导人写作是最好的事。因为写作与思考之间没有本质的区别。在学校没人告诉学生为何写作。你写作是为了思考。如果你善于思考，雄辩，写作，那么你能无往不利。思考是你能够给一个人的最强有力的武器。那些很聪明的人，的言论往往都很有说服力。如果你很有说服力，善于与人沟通，那么你将获得很多资源。该怎么规划时间呢？为了有你想要的一天，定个时间表。（为了达成你的目标，你明天该过成啥样，才最靠谱？明天过完，有比开始更靠近目标了么？）</p>
+<li>1.AI编程，要不70%的精力用于规划，30%的精力用于执行。<ul>
+<li>1.把规划当作生死攸关的大事。我的秘密武器：ChatGPT语音助手。我知道这听起来很怪，用一个AI来驯服另一个AI(Cursor)。但请听我说完。在动手编码前，我会先用ChatGPT语音梳理思路。当亲耳听到自己的需求时，反而能理清真正想要什么。比如开发任务管理应用时，我会这样说，嘿，我要做个任务管理应用。用户需要能添加、编辑和删除任务。得有个首页展示任务列表，一个添加任务的表单，再加个编辑页面。ChatGPT语音帮我生成大纲后，我会随手记在餐巾纸上（没错，我就是这么老派）:任务应用规划-核心目标：简易任务管理 必备功能：-任务增减改 -任务列表展示-流程设计：-首页：任务列表 -添加页：表单 -详情页：编辑入口。这张餐巾纸草图就是我的北极星，确保我和Cursor都不会跑偏。</li>
+<li>2.事无巨细，全部文档化。这事我用惨痛教训换来的经验。AI生成的代码质量，完全取决于你提供的上下文。如果跳过文档环节，Cursor就会犯低级错误。比如那次它给我生成的后端API居然完全没有错误处理逻辑，简直离谱。我的首选工具，CodeGuide。我使用它来生成两份关键文档，产品需求文档（PRD）：明确“做什么”-功能、用户故事、边界情况。技术栈：明确“怎么做”-框架、库、工具。例如，PRD: TaskMaster -目标：让任务管理变得及其简单  - 用户故事： -我希望添加任务以跟踪我的工作  - 我希望编辑任务以修正错误 - 我希望在任务完成后删除它  - 技术栈： - 前端:React + TypeScript  -后端：Node.js + Express -数据库： MongoDB。这些文档是我在Cursor中的速查手册--杜绝任何猜测。</li>
+<li>3.不要从零开始。Cursor在项目初始化时表现糟糕。文件结构、样板代码、依赖配置都容易出错。我曾吃过亏，有一次它给了我一个Webpack配置损坏的React项目。现在，我永远从项目模版(Start Kit)开始。用模版的好处，让Cursor专注功能开发，而非搭建脚手架。就像给厨师一颗切好的洋葱，减少混乱，加速进度。</li>
+<li>4.正确配置Cursor。准备好了项目计划、文档和启动模版。很好，但在你向Cursor输入任何指令之前，先做好这些准备工作。在项目根目录新建一个Instructions文件夹，将CodeGuide生成的所有文档放入该文件夹。向Curosr输入以下指令Go through all file in Instructions and use them as context。这就像在施工前给Cursor一份设计蓝图。如果跳过这一步，你就是在自找麻烦。</li>
+<li>5.项目规则的魔力。这才是真正神奇的地方。以前Cursor总是搞砸我的代码，最大原因就是我没有设置明确的规则。没有规则时，它只能靠猜。而它的猜测往往是错误的。比如那次我想要一个函数式组件，它却给了我一个类组件，简直让人抓狂。Cursor曾经依赖单一的.cursorrules文件来管理规则，但这简直是个噩梦。我把所有指令都塞进一个文件，结果Cursor有一半都没遵守。这种方式根本无法扩展，AI的响应也乱七八糟。好在Cursor现在改用.cursor/rules/目录下的.mdc文件来管理规则了。这彻底改变了游戏规则。项目规则允许你为项目的不同部分设置特定指令。比如，我的任务应用配置如下。</li>
+<li>6.收获和总结。自从使用项目规则后，我的工作轻松多了。Cursor犯的错误更少，记住了我的编码风格，而且第一次就能给出正确的代码。这就像拥有一个真正听话的初级开发助手。一下是我总结的宝贵经验。规则要具体，前端、后端的规则分开设置，别把所有内容都塞进一个文件精确限定范围，只在需要的范围应用规则，比如用.tsx限定React文件，用api/*<em>/</em>.ts限定后端代码提前测试。先让Cursor生成一小段代码，检查它是否遵守了你的规则。及时更新，项目有变动时记得更新规则，别让规则过时失效。</li>
+<li>7.摘自《我是如何驯服Cursor AI，让它每次都能写出完美代码的》(https://medium.com/coding-nexus/how-i-tamed-cursor-ai-to-write-perfet-code-every-time-951851a92f6f</li>
+</ul>
 </li>
-<li>
-<p>2.可能一天花20%来履行你的责任，或更多，取决你落后多少。你可以问问自己，我有这些责任，我要把这些规划到。那么认真和奖励之间的比例是多少？你可以这样问自己，就像你在和自己的员工讨价还价一样。例如，你想我明天好好工作，那么你会给予些什么我呢？（可以是认真一小时，然后打一会游戏。）你得和自己商量，而不是强迫自己。就像与一个能让你效率变高，生活变好的人谈判一样。这才是正确的规划。因为你会想，如果我度过了这样的一天，肯定会很好。这样，你会走上正确的道路，事情开始正循环然后你上升进步。你是否行动，或者在多大程度活出精彩并不只是关系到你自己的命运。这不仅是你的命运，而是所有与你相连的人的命运。世界有70亿人，你怎么做，做不做，似乎不重要。但不是这样的，你是你关系网中的结点。你一生会认识超过1000人，这些人也会认识1000人，你与100万人之间只有一个人的距离，和十亿人之间只用两个人的距离。你所做的，如石头落入池塘，一圈圈涟漪向外扩散，以你完全无法理解的方式影响着一切。这意味着你做或者不做会比你想象的重要得多。如果你过着病态的生活，你将会将你所处的圈子病态化。世界上病态的人达到一定数量，将会变成地狱。</p>
-</li>
-<li>
-<p>3.你真的想要的东西，你会得到。</p>
-</li>
+<li>2.微软的《AI Pair Programming Best Practices》</li>
+<li>3.OpenAI的Cookbook</li>
+<li>4.Coursera的《AI-Assisted Programming》</li>
+<li>5.GitHub的Copilot认证</li>
+<li>6.四大能力，英语，编程，写作，自学。因为AI的出现，其实编程，写作都在某种程度上，可以找到助力的东西了。是否应该把英语作为你的核心能力。也就是说，大家都可以用AI了，你如果精通英语，你是不是会比其他人更有优势。</li>
+<li>7.在兰州拉面吃饭。外面进来了一个咨询是否招工的人。令你挺有感触一样。把你自己代入进去，设身处地的思考一下，如果这个人是你，你会咋样。</li>
+<li>8.写作构思。我在这个城市，不认识什么人，也找不到一个愿意帮助我的人。我是谁。我为何走到现在这样的困境。我都遭遇了些啥。自己的性格又怪，又没学历。早前也遇到过自己喜欢的女孩子，但是自己条件又差，又没胆子，也不讨喜。说不出来有什么突出的地方。喜欢看书，喜欢看《读者》，喜欢玩游戏。看着高楼大夏，外面挂着某某局的招牌。里面出来的年轻男女，有说有笑。曾经不止一次的幻想过，自己也能在这种高楼上班。真不知道在这种地方上班，是啥感觉。听说工资很高，整天有空调吹着。</li>
+<li>9.只要活着，一切都有可能发生在你身上。</li>
+<li>10.你看，去一下购书中心（或者图书馆），对你来说还是非常重要的。即使你只是像今晚一样，仅仅走马观花的，随便浏览了一下。也会让你的内心，得到梳理，整理。</li>
+<li>11.重大的政策，还是要看一些书籍，才能理解得更深。对啊，对于近期发生的重大事件，有没有什么解析的书籍能。</li>
+<li>12.盆景。可以买些盆景。</li>
+<li>13.YouWare</li>
+<li>14.你工作上的东西，会因为不认真而造成失误。那么，你目标的东西，会不会也有过因为不认真而造成的失误，但是你自己并不知道的呢。</li>
+<li>15.最近有大量的老游戏重制。例如FC的绿色兵团的精神续作。</li>
+<li>16.要做的，始终是解决问题。不要让问题积累，发展，而是一个接一个的解决它。（问题，就那么多，总会全部清掉的。）</li>
+<li>17.有了第一个真实的用户。</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../11/" class="btn btn-neutral float-left" title="11"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../13/" class="btn btn-neutral float-right" title="13">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../157/" class="btn btn-neutral float-left" title="157"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -741,10 +757,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../11/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../157/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../13/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
