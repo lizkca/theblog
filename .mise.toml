@@ -1,0 +1,4 @@
+[tools]
+"pipx:mkdocs" = "latest"
+ruby = "3.2.2"
+python = "3.11"
